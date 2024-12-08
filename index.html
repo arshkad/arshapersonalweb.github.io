@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.avif" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Welcome to Arsha's Portfolio</h1>
+            <p>I am a third year Computer Science student with an interest in software development.
+                I have gained experience in C++, Python, object-oriented programming through projects. 
+                I am passionate about learning and exploring the vast field of software engineering.</p>
+            <br>
+            <p class="tagline">"LEARNING MORE EVERYDAY"</p>
+            <br>
+            <img src="images/newavatar.png" alt="avatar" class="center" >
+        </div>
+    </div>
+</div>
+<!--------about page ------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+        </div>
+        <div class="about-col-1">
+            <h1 class="sub-titleforabout">About Me</h1>
+            <p> I am currently a third-year Computer Science student at California State 
+                University-Fullerton. As a Computer Science student, I have done relevant 
+                coursework such as Data Structures, Algorithm Engineering, Object-Oriented 
+                Programming, and more. I have also gained experience through being a data 
+                science researcher where I utilized my Python skills. Some of my technical 
+                skills include C++, Python, SQL, and more. Other than learning and developing 
+                my skills in different aspects of Computer Science, I like to play tennis, 
+                listen to music, and study at various cafes.
+            </p>
+        </div>
+            <div class="about-col-2">
+                <h1>Resume</h1>
+                <button onclick="window.open('file:///Users/arshaanvekar/Downloads/Arsha%20Anvekar-%20Personalpageresume.pdf', '_blank');" 
+        style="padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 5px; font-size: 20px; cursor: pointer;">
+        Download Resume
+            </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------projects----------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-titleforprojects">Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class= "fas fa-code"></i>
+                <h2>Hurdle</h2>
+                <p>Used C++ to developed a replica of the New York Times word game named 
+                   Wordle by coding the backend portion. The challenges that were faced 
+                   included input validation, efficient word matching, and more. The outcome
+                   was a functioning backend of Wordle. </p>
+                <a href="file:///Users/arshaanvekar/Downloads/hurdle-backend-arshakda-main.zip">Download ZIP file</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Using SQL to compare tech salaries in the world</h2>
+                <p>Used SQL to compare the different tech salaries in countries, 
+                    taking in account various other factors. These factors included 
+                    programming language, city, seniority, and more. Challenges faced 
+                    includes developing the physical model and then implentmenting it 
+                    into SQL. The outcome was we were sucessfully in comparing the tech 
+                    salaries around the world. 
+                </p>
+                <a href="file:///Users/arshaanvekar/Downloads/CPSC%20332%20Final%20Paper.pdf">View Report</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------Skills page --------->
+<div id="skills">
+    <div class="container">
+        <h1 class="sub-titleforskills">My Skills</h1>
+        <div class="skills-list">
+            <div class="row1">
+                <div class="about-col-11">
+                    <i class="fas fa-code"></i>
+                    <h2>Technical Skills</h2>
+                    <p>Python <br>
+                        C++ <br>
+                        JavaScript <br>
+                        HTML <br>
+                        SQL <br>
+                        Object-Oriented Programming <br>
+                        Data Structures and Algorithms
+                    </p>
+                </div>
+                <div class="about-col-22">
+                    <i class="fas fa-code"></i>
+                    <h2>Non-technical Skills</h2>
+                    <p>Problem-Solving <br>
+                        Critial Thinking <br>
+                        Communication<br>
+                        Collaboration <br>
+                        Time Management <br>
+                    </p>
+                </div>
+            </div>
+            <br>
+            <h2 class="sub-titleforskillbar">Skill Bar</h2>
+            <div class="skills">
+                <h3>HTML</h3>
+                <div class="skill-bar">
+                    <div class="skill-level html"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <h3>CSS</h3>
+                <div class="skill-bar">
+                    <div class="skill-level css"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <h3>JavaScript</h3>
+                <div class="skill-bar">
+                    <div class="skill-level javascript"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <h3>Python</h3>
+                <div class="skill-bar">
+                    <div class="skill-level python"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------Contact Page------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-titleforcontact">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>arshaanvekar4@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>714-123-4567</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/arsha-anvekar-89810a263/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/arshakda"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="contact-right"></div>
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Name" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <p>Designed and developed by Arsha Anvekar, CWID: 885680421</p>
+</div>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right ="0";
+    }
+    function closemenu(){
+        sidemenu.style.right ="-200px";
+    }
+</script>
+
+</body>
+</html>
